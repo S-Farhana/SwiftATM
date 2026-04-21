@@ -1,0 +1,113 @@
+.pageHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+.pageTitle { font-size: 28px; font-weight: 700; letter-spacing: 1px; margin-bottom: 4px; }
+.pageSub { font-size: 13px; color: var(--text2); }
+.refreshBtn { font-size: 11px; letter-spacing: 2px; flex-shrink: 0; }
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 60px 0;
+  color: var(--text2);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.loadDots { display: flex; gap: 8px; }
+.loadDots span {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--green);
+  animation: pulse 1.2s ease-in-out infinite;
+}
+.loadDots span:nth-child(2) { animation-delay: 0.2s; }
+.loadDots span:nth-child(3) { animation-delay: 0.4s; }
+
+.empty {
+  text-align: center;
+  padding: 60px 0;
+  color: var(--text3);
+}
+.emptyIcon { font-size: 40px; margin-bottom: 12px; }
+
+.list { display: flex; flex-direction: column; gap: 2px; }
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  animation: fadeIn 0.25s ease both;
+  transition: border-color 0.15s;
+}
+.row:hover { border-color: var(--border2); }
+
+.typeIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.rowMain { flex: 1; min-width: 0; }
+.rowTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rowSub {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text3);
+}
+.ref {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+.dot { color: var(--border2); }
+
+.rowRight { text-align: right; flex-shrink: 0; }
+.amount {
+  font-family: var(--mono);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 3px;
+}
+.balAfter {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text3);
+  letter-spacing: 0.5px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+.pageBtn { font-size: 11px; letter-spacing: 2px; padding: 8px 16px; }
+.pageNum { font-size: 13px; color: var(--text2); font-family: var(--mono); }

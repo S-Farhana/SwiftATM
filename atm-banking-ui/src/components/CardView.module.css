@@ -1,0 +1,142 @@
+.pageHeader { margin-bottom: 28px; }
+.pageTitle { font-size: 28px; font-weight: 700; letter-spacing: 1px; margin-bottom: 4px; }
+.pageSub { font-size: 14px; color: var(--text2); }
+.loading, .empty { padding: 60px 0; text-align: center; color: var(--text2); font-size: 14px; }
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.chip {
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease both;
+  cursor: default;
+  transition: transform 0.2s;
+}
+.chip:hover { transform: translateY(-3px); }
+
+.debit {
+  background: linear-gradient(135deg, #0d1520 0%, #0a1020 100%);
+  border: 1px solid #1e3a5f;
+  box-shadow: 0 0 30px rgba(55, 138, 221, 0.08);
+}
+
+.credit {
+  background: linear-gradient(135deg, #1a0d0d 0%, #150a0a 100%);
+  border: 1px solid #5f1e2a;
+  box-shadow: 0 0 30px rgba(221, 55, 88, 0.08);
+}
+
+.frozen {
+  filter: grayscale(0.6);
+  opacity: 0.7;
+}
+
+.chipTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chipLogo {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.debit .chipLogo { color: #378add; }
+.credit .chipLogo { color: #dd3758; }
+
+.chipTypeBadge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.debit .chipTypeBadge { background: rgba(55,138,221,0.15); color: #378add; border: 1px solid #378add44; }
+.credit .chipTypeBadge { background: rgba(221,55,88,0.15); color: #dd3758; border: 1px solid #dd375844; }
+
+.chipEmv {
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.chipNumber {
+  font-family: var(--mono);
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.chipBottom {
+  display: flex;
+  gap: 24px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 16px;
+}
+
+.chipLabel {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--text3);
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+.chipVal {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text);
+}
+
+.activeText { color: var(--green) !important; }
+.frozenText { color: var(--amber) !important; }
+
+.creditInfo {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.creditRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 6px;
+  color: var(--text2);
+}
+
+.outstanding { color: var(--amber); font-family: var(--mono); }
+
+.limitBar {
+  height: 4px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 2px;
+  margin: 10px 0 4px;
+  overflow: hidden;
+}
+
+.limitFill {
+  height: 100%;
+  background: var(--amber);
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+.limitLabel {
+  font-size: 11px;
+  color: var(--text3);
+  letter-spacing: 1px;
+  text-align: right;
+}
