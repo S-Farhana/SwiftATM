@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
-import { useAuth } from '../context/AuthContext'
-import { atmApi } from '../services/api'
+import { useAuth } from '../AuthContext'
+import { atmApi } from '../api'
 import BalanceCard from './BalanceCard'
 import WithdrawForm from './WithdrawForm'
 import DepositForm from './DepositForm'
-import TransactionHistory from './TransactionHistory'
+import TransactionHistory from './TransactionHistro'
 import CardsView from './CardsView'
 import styles from './Dashboard.module.css'
 
