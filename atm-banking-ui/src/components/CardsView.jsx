@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import { atmApi } from '../api'
-import styles from './CardView.module.css'
+import { atmApi } from '../services/api'
+import styles from './CardsView.module.css'
 
 export default function CardsView({ showToast }) {
   const [cards, setCards]     = useState([])

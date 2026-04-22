@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { atmApi } from '../services/api'
 import styles from './BalanceCard.module.css'
 
 export default function BalanceCard({ balance, user, onRefresh, showToast }) {

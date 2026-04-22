@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { atmApi } from '../api'
+import { atmApi } from '../services/api'
 import styles from './TransactionForm.module.css'
 
 // ---- Quick amount buttons ----

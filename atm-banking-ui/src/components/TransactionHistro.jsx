@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import { atmApi } from '../api'
-import styles from './TransactionHistroy.module.css'
+import { atmApi } from '../services/api'
+import styles from './TransactionHistory.module.css'
 
 const TYPE_COLORS = {
   WITHDRAWAL:       { color: '#ff3d57', symbol: '↑' },
